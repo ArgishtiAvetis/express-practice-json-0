@@ -1,0 +1,12 @@
+<head>
+  <link rel="stylesheet" href="/styles/style.css" />
+</head>
+<p>
+  Header
+</p>
+<a href="/">Home</a> <br />
+<% for (var i = 0; i < movies.length; i++) { %>
+<a href="/challenge/<%= movies[i].episode_number %>"><%= movies[i].title %></a><br />
+
+<% } %>
+<hr />
